@@ -14,7 +14,7 @@ if resource, err := acquire(); err != nil {
 ... you can then write ...
 
 ```golang
-resource := must.Resolve(acquire())
+resource := must.Be(acquire())
 ```
 
 ... and it panics in case of error. 
